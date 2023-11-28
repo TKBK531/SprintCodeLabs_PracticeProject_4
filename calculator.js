@@ -15,11 +15,7 @@ function handleClick(button) {
 }
 
 function digitInput(digit) {
-    const maxLength = 16;
-
-    if (textbox.value.length < maxLength) {
-        textbox.value += digit;
-    }
+    textbox.value += digit;
 }
 
 function clearScreen() {
@@ -30,10 +26,8 @@ function computeScreen() {
     try {
         var answer = eval(textbox.value);
 
-        if (answer === "undefined") {
-            textbox.value = "Syntax error";
-            return;
-        } else if (answer === Infinity) {
+
+        if (answer === Infinity) {
             textbox.value = "Math Error";
             return;
         }
