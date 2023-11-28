@@ -1,0 +1,13 @@
+.box {
+    /* height: 100px; */
+    background-color: black;
+}
+
+.custom-btn {
+    background-color: #008E11;
+    padding: 3rem;
+}
+
+.custom-btn:hover {
+    background-color: green;
+}
